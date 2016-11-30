@@ -1,0 +1,12 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Loader : MonoBehaviour {
+
+	public GameObject gm;
+
+	void Awake() {
+		if (GameManager.instance == null)
+			Instantiate (gm);
+	}
+}
